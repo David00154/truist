@@ -21,3 +21,5 @@ app.get("/", (req, res) => res.render("home", { layout: "layout" }));
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log("Server started %s", port));
+
+module.exports = app;
