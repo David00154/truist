@@ -1,0 +1,81 @@
+<footer class="bg-primary w-full">
+  <div class="py-[18px] container mx-auto md:px-[7%] px-[5%]">
+    <div class="flex md:flex-row flex-col md:gap-8 gap-4 mt-[20px] items-center md:justify-evenly justify-center">
+      <a href="#">
+        <img src="images/footer-logo.svg" class="md:w-[190px] w-[100px]" alt="">
+
+      </a>
+      <a href="#" class="text-[20px] text-light-primary-2 hover:text-white">Privacy</a>
+      <a href="#" class="text-[20px] text-light-primary-2 hover:text-white">Fraud & Security</a>
+      <a href="#" class="text-[20px] text-light-primary-2 hover:text-white">Terms and condition</a>
+    </div>
+    <div class="flex md:flex-row flex-col md:gap-8 gap-4 mt-[30px] items-start md:justify-evenly">
+      <div class="flex flex-col gap-5" x-data="{links:[
+                    'Checking',
+                    'Commercial',
+                    'Credit cards',
+                    'Loans',
+                    'Mortgage',
+                    'Online and mobile',
+                    'Open and account',
+                    'Savings',
+                    'Small business',
+                    'Wealth',
+                ]}">
+        <h4 class="text-[22.5px] text-custom-blue">Banking products</h4>
+        <template x-for="item in links">
+          <a href="#" class="text-[20px] text-light-primary-2 hover:text-white" x-text="item"></a>
+        </template>
+      </div>
+      <div class="flex flex-col gap-5" x-data="{links:[
+                'About us',
+                'Care',
+                'Community',
+                'Purpose',
+                'Truist Foundation',
+                'Truist Leadership Institute',
+                'Truist Securities',
+                'Truist Ventures',
+                ]}">
+        <h4 class="text-[22.5px] text-custom-blue">About Truist</h4>
+        <template x-for="item in links">
+          <a href="#" class="text-[20px] text-light-primary-2 hover:text-white" x-text="item"></a>
+        </template>
+      </div>
+      <div class="flex flex-col gap-5" x-data="{links:[
+                'Careers',
+                'Community Reinvestment Act',
+                'Diversity and inclusion',
+                'Facts about banking',
+                'Investor relations',
+                'Money and Mindset',
+                'Newsroom',
+                'Supplier diversity'
+                ]}">
+        <h4 class="text-[22.5px] text-custom-blue">Resources</h4>
+        <template x-for="item in links">
+          <a href="#" class="text-[20px] text-light-primary-2 hover:text-white" x-text="item"></a>
+        </template>
+      </div>
+      <div class="flex flex-col gap-5" x-data="{links:[
+                'Accessibility',
+                'Client emergency resources',
+                'Consumer payment relief hub',
+                'Find a banker or advisor',
+                'Find a branch or ATM',
+                'Help Center',
+                'Schedule a branch appointment',
+                '844-4TRUIST (844-487-8478)',
+                ]}">
+        <h4 class="text-[22.5px] text-custom-blue">Support</h4>
+        <template x-for="item in links">
+          <a href="#" class="text-[20px] text-light-primary-2 hover:text-white" x-text="item"></a>
+        </template>
+      </div>
+    </div>
+  </div>
+  <hr class="divide-y-[3px] py-7">
+  <div class="py-[5px] flex w-full items-center justify-center bg-black ">
+    <p class="mb-[20px] text-white text-[15.3px] w-full justify-center flex items-center">&copy; 2022, Truist. All Rights Reserved.</p>
+  </div>
+</footer>

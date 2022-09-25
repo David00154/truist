@@ -1,0 +1,8 @@
+/* .bar-bold::before {
+	position: absolute;
+	left: 0;
+	background-color: red;
+	width: 4px;
+	content: "";
+	height: -webkit-fill-available;
+} */

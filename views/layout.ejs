@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truist | Personal Banking, Commercial Banking, Mortgages, Investments</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+
+  <link rel="prefetch" href="fonts/icomoon.ttf" as="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/icomoon.woff" as="font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/truist-icons.eot" as=" font/woff2" crossorigin="anonymous">
+  <link rel="prefetch" href="fonts/truist-icons.ttf" as="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2e1a47',
+            'background-color': '#eee8f7',
+            'custom-blue': '#b0e0e2',
+            'light-primary': '#7c6992',
+            'custom-gray': '#707070',
+            'light-primary-2': '#afabc9'
+          }
+        },
+        container: {
+          // padding: '2rem',
+        },
+      }
+    }
+  </script>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <style type="text/tailwindcss">
+    @layer base {
+      html,body{
+        @apply bg-background-color w-full h-full;
+      }
+      img{
+        vertical-align: middle;
+      }
+      [x-cloak] {
+        display: none;
+      }
+    }
+    @layer components {
+      .bar-light::before {
+        @apply bg-light-primary w-[3px] left-0 top-0 absolute h-[-webkit-fill-available] content-[''];
+      }
+      .bar-bold::before {
+        @apply bg-primary w-[5px];
+      }
+      .bar-light{
+        @apply font-[300];
+      }
+      .bar-bold{
+        @apply font-[700];
+      }
+      /* .bar-light::before {
+        @apply bg-light-primary w-[3px] left-0 top-0 absolute h-[-webkit-fill-available] content-[''];
+      } */
+      
+    }
+  </style>
+</head>
+
+<body>
+  <%- body %>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var splide = new Splide('.splide', {
+        perPage: 1,
+        arrows: false,
+        pagination: false,
+        autoWidth: true,
+        // focus: 'center',
+        // trimSpace: false
+      });
+      splide.mount();
+    });
+    document.addEventListener('alpine:init', () => {
+      Alpine.data('digit', () => ({
+        _index: 0,
+        list: [{
+            title: 'Just-in-time tips—just for you.',
+            text: `We'll crunch the numbers so you can make your next move.`,
+            image: 'images/digit-banking-1.svg',
+          },
+          {
+            title: 'Move money fast.',
+            text: 'Transfers and payments in minutes.',
+            image: 'images/digit-banking-2.svg',
+          },
+          {
+            title: `Forgot password? Need a thumb rest? You'
+                    re good.
+                    `,
+            text: 'Sign in fast with Face ID or Touch ID.',
+            image: 'images/digit-banking-3.svg',
+          },
+          {
+            title: 'Get paid for your morning coffee',
+            text: 'Shop at your favorite spots and earn cash back.',
+            image: 'images/digit-banking-4.svg',
+          },
+        ],
+        _index2: 0,
+        list2: [{
+            title: 'Sustanability for the future',
+            text: 'Our goal is net-zero emissions by 2050.',
+            image: 'images/original.jpg'
+          },
+          {
+            title: 'Unleashing potential',
+            text: 'Together with the NFL, we’re working to bring wins to communities.',
+            image: ''
+          },
+          {
+            title: 'Relentlessly pursuing a diverse culture',
+            text: 'So everyone has an equal opportunity to thrive.',
+            image: 'images/original-2.jpg'
+          },
+          {
+            title: 'The heart of innovation',
+            text: 'Clients drive change at our Innovation and Technology Center.',
+            image: 'images/original-3.jpg'
+          },
+          {
+            title: 'Creating an impact. Fueling change.',
+            text: '$60 billion in 3 years? You bet.',
+            image: 'images/original-4.jpg'
+          },
+        ],
+        list3: [{
+            value: '$12.2',
+            worth: 'billion',
+            text: 'in payment relief for clients during COVID-19'
+          },
+          {
+            value: '$78',
+            worth: 'million',
+            text: 'to advance diversity, equity, and inclusion<sup>2</sup>'
+          },
+          {
+            value: '$60',
+            worth: 'billion',
+            text: 'to elevate low-and-moderate-income communities'
+          },
+          {
+            value: '$808',
+            worth: 'million',
+            text: 'for affordable housing and job creation'
+          },
+        ]
+      }))
+    })
+  </script>
+</body>
+
+</html>
