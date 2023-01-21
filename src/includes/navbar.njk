@@ -16,10 +16,9 @@
                                 <option data-display="Personal Banking">
                                             Personal Banking
                                         </option>
-                                <option value="1">Business Banking</option>
-                                <option value="2">Personal Banking 01</option>
-                                <option value="3">Personal Banking 02</option>
-                                <option value="4">Personal Banking 03</option>
+                                {% for item in site.header_menu %}
+                                    <option value="{{loop.index}}">{{item}}</option>
+                                {% endfor %}
                             </select>
                         </div>
                     </div>

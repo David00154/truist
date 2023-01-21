@@ -2,7 +2,7 @@
 	"email": "info@info.com",
 	"admin": "https://www.truist-admin.tradingfx.space",
 	"phone": "(844-487-8478)",
-	"header-menu": [],
+	"header_menu": ["Business banking", "Commercial Banking", "Agriculture Banking", "Small Business", "Corporate & Investment Banking"],
 	"menu": [
 		{
 			"title": "Checking & savings",
