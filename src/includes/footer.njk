@@ -1,0 +1,170 @@
+<!--Start footer area -->
+<footer class="footer-area">
+    <div class="right-shape">
+        <img src="assets/images/shapes/footer-right-shape.png" alt="">
+    </div>
+
+    <!--Start Footer Top-->
+    <div class="footer-top">
+        <div class="lef-shape">
+            <span class="icon-origami"></span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--Start single footer widget-->
+                {% for item in site.menu %}
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 single-widget">
+                        <div class="single-footer-widget single-footer-widget--link-box">
+                            <div class="title">
+                                <h3>{{item.title}}</h3>
+                            </div>
+                            <div class="footer-widget-links">
+                                <ul>
+                                    {% for item2 in item.dropdown %}
+                                        {% if item2.text != undefined %}
+                                            <li>
+                                                <a href="/#/">{{item2.text}}</a>
+                                            </li>
+                                        {% endif %}
+                                        {% if item2.text == undefined %}
+                                            <li>
+                                                <a href="/#/">{{item2}}</a>
+                                            </li>
+                                        {% endif %}
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                <!--End single footer widget-->
+            </div>
+        </div>
+    </div>
+    <!--End Footer Top-->
+
+    <!--Start Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!--Start single footer widget-->
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-footer-widget marbtm50">
+                        <div class="our-company-info">
+                            <div class="footer-logo-style1">
+                                <a href="index-2.html">
+                                    {% include "components/icon.svg" %}
+                                    {# <img src="assets/images/footer/footer-logo-1.png" alt="Awesome Logo"
+                                                title=""> #}
+                                </a>
+                            </div>
+                            <div class="copyright-text">
+                                <p>
+                                            Copyright &copy; 2022 <a href="index-2.html">{{meta.title}}.</a> Licensed by the<br>
+                                            Central Bank of United States.
+                                        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+
+                <!--Start single footer widget-->
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-footer-widget marbtm50">
+                        <div class="footer-widget-contact-info">
+                            <ul>
+                                <li>
+                                    <h3>
+                                        <a href="tel:{{site.phone}}">{{site.phone}}</a>
+                                    </h3>
+                                    <p>Customer Care</p>
+                                </li>
+                                <li>
+                                    <h3>Mon - Fri: 9.00am to 5.00pm</h3>
+                                    <p>Banking Hours</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+
+                <!--Start single footer widget-->
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                    <div class="single-footer-widget">
+                        <div class="single-footer-widget-right-colum">
+                            <ul>
+                                <li>
+                                    <a href="index.html#">
+                                                Download Forms
+                                                <span class="icon-download"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html#">
+                                                Register Your Complaint
+                                                <span class="icon-feedback"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--End single footer widget-->
+
+            </div>
+        </div>
+    </div>
+    <!--End Footer-->
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="bottom-inner">
+                <div class="footer-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html#">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="index.html#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="index.html#">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="index.html#">Online Security Tips</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-link">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="index.html#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!--End footer area-->

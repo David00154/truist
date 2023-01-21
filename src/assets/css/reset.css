@@ -1,0 +1,41 @@
+.main-slider-style1 {
+	padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+	.main-menu-style1 .container {
+		padding: 0 50px 0 0 !important;
+	}
+	.features-style2-tab-content-box-item .row > :nth-child(2) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.single-deals-box .text-box {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		/* padding-top: 10px !important; */
+		padding-bottom: 10px !important;
+	}
+	.emi-calculator-tab-content-box-outer {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+		/* padding-top: 10px !important; */
+		padding-bottom: 10px !important;
+	}
+
+	.emi-calculator-output-box {
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+.sec-title h2 {
+	font-size: 30px !important;
+}
+.wealth-secure-area {
+	padding-bottom: 10px !important;
+}
+
+/* .stricky-header.stricky-fixed {
+	margin-top: 39.4px;
+} */

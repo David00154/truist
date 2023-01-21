@@ -1,0 +1,102 @@
+{
+	"email": "info@info.com",
+	"admin": "https://www.truist-admin.tradingfx.space",
+	"phone": "(844-487-8478)",
+	"header-menu": [],
+	"menu": [
+		{
+			"title": "Checking & savings",
+			"dropdown": [
+				{
+					"link": "#",
+					"text": "Checking",
+					"dropdown": ["Truist One Checking", "Truist Confidence Account", "Visa® Debit cards", "Visa® Money Account", "Visa® Gift card"]
+				},
+				{
+					"link": "#",
+					"text": "Banking Services",
+					"dropdown": ["Premier banking", "Online & mobile banking", "Wealth digital banking", "Truist Cash Reserve"]
+				},
+				{
+					"link": "#",
+					"text": "Savings",
+					"dropdown": [
+						"View all savings options",
+						"Truist One Savings",
+						"Truist One Money Market Account",
+						"Truist CDs",
+						"Truist Confidence Savings"
+					]
+				}
+			]
+		},
+		{
+			"title": "Credit cards",
+			"dropdown": [
+				{
+					"link": "#",
+					"text": "Our products",
+					"dropdown": [
+						"Credit cards",
+						"Truist Enjoy Cash",
+						"Truist Enjoy Travel",
+						"Truist Future Card",
+						"Truist Enjoy Beyond",
+						"Truist Enjoy Cash (secured)"
+					]
+				},
+				{
+					"link": "#",
+					"text": "Offers",
+					"dropdown": ["Check for Offers"]
+				}
+			]
+		},
+		{
+			"title": "Loans",
+			"dropdown": [
+				{
+					"link": "#",
+					"text": "Our products",
+					"dropdown": ["Find the right loan", "Home Equity Line of Credit", "Personal loans", "Auto Loan", "Boat and RV loans"]
+				}
+			]
+		},
+		{
+			"title": "Mortgage",
+			"dropdown": ["Mortgage", "Current Mortgage Rates", "Buy a home", "Refinance", "Home Equity Line of Credit"]
+		},
+		{
+			"title": "Money and Mindset",
+			"dropdown": [
+				{
+					"link": "#",
+					"text": "Life's moment overview",
+					"dropdown": [
+						"Taking charge of your money",
+						"Borrowing for a big purchase",
+						"Getting married or partnered",
+						"Paying for school",
+						"Starting a family",
+						"Buying a home"
+					]
+				},
+				{
+					"link": "#",
+					"text": "Money principles overview",
+					"dropdown": [
+						"The mind-money connection",
+						"Stress-free saving",
+						"Budgeting by values",
+						"Outsmarting debt",
+						"Protecting what matters",
+						"Investing in your values",
+						"Homeowning happiness",
+						"Living and working my passion",
+						"Paying it forward"
+					]
+				}
+			]
+		}
+	]
+}

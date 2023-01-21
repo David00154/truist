@@ -1,0 +1,176 @@
+<header class="main-header main-header-style1">
+
+    <!--Start Main Header Style1 Top-->
+    <div class="main-header-style1-top">
+        <div class="auto-container">
+            <div class="outer-box">
+                <!--Start Main Header Style1 Top Left-->
+                <div class="main-header-style1-top__left">
+                    <div class="looking-banking-box ">
+                        <div class="inner-title">
+                            <span class="icon-binoculars"></span>
+                            <p>Looking</p>
+                        </div>
+                        <div class="select-box clearfix">
+                            <select class="wide">
+                                <option data-display="Personal Banking">
+                                            Personal Banking
+                                        </option>
+                                <option value="1">Business Banking</option>
+                                <option value="2">Personal Banking 01</option>
+                                <option value="3">Personal Banking 02</option>
+                                <option value="4">Personal Banking 03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="nearest-branch">
+                        <span class="icon-map"></span>
+                        <a href="index.html#">Find Nearest Branch</a>
+                    </div>
+                </div>
+                <!--End Main Header Style1 Top Left-->
+
+                <!--Start Main Header Style1 Top Right-->
+                <div class="main-header-style1-top__right">
+                    <div class="header-menu-style1">
+                        <ul>
+                            <li>
+                                <a href="index.html#">Careers</a>
+                            </li>
+                            <li>
+                                <a href="index.html#">Faq’s</a>
+                            </li>
+                            <li>
+                                <a href="index.html#">Offers</a>
+                            </li>
+                            <li>
+                                <a href="index.html#">Calendar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-search-style1">
+                        <a href="index.html#" class="search-toggler">
+                            <span class="icon-search"></span>
+                                    Search
+                                </a>
+                    </div>
+                    <div class="language-switcher">
+                        <div id="polyglotLanguageSwitcher">
+                            <form action="index.html#">
+                                <select id="polyglot-language-options">
+                                    <option id="en" value="en" selected>English</option>
+                                    <option id="fr" value="fr">French</option>
+                                    <option id="de" value="de">German</option>
+                                    <option id="it" value="it">Italian</option>
+                                    <option id="es" value="es">Spanish</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--End Main Header Style1 Top Right-->
+
+            </div>
+        </div>
+    </div>
+    <!--End Main Header Style1 Top-->
+
+    <nav class="main-menu main-menu-style1">
+        <div class="main-menu__wrapper clearfix">
+            <div class="container">
+                <div class="main-menu__wrapper-inner">
+
+                    <div class="main-menu-style1-left">
+                        <div class="logo-box-style1">
+                            <a href="index.html">
+                                {# <img src="assets/images/resources/logo-1.png" alt="Awesome Logo" title=""> #}
+                                {% include "components/icon.svg" %}
+                            </a>
+                        </div>
+
+                        <div class="main-menu-box">
+                            <a href="index.html#" class="mobile-nav__toggler">
+                                <i class="icon-menu"></i>
+                            </a>
+                            {#  #}
+                            <ul class="main-menu__list">
+                                {% for item in site.menu %}
+                                    {% if item.dropdown == undefined %}
+                                        <li>
+                                            <a href="/#/">{{item.title}}</a>
+                                        </li>
+                                    {% endif %}
+                                    {% if item.dropdown != undefined %}
+                                        <li class="dropdown">
+                                            <a href="/#/">{{item.title}}</a>
+                                            <ul>
+                                                {% for item2 in item.dropdown %}
+                                                    <li class="dropdown">
+                                                        {% if item2.text%}
+                                                            <a href="{{item2.link}}">{{item2.text}}</a>
+                                                        {% endif %}
+                                                        {% if item2.text == undefined %}
+                                                            <a href="/#/">{{item2}}</a>
+                                                        {% endif %}
+
+                                                        {% if item2.dropdown != undefined %}
+                                                            <ul>
+                                                                {% for item3 in item2.dropdown %}
+                                                                    <li>
+                                                                        <a href="/#/">{{item3}}</a>
+                                                                    </li>
+                                                                {% endfor %}
+                                                            </ul>
+                                                        {% endif %}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
+                                    {% endif %}
+
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="main-menu-style1-right">
+                        <div class="header-btn-one">
+                            <a href="https://southseademo.southseaprivate.online/home/customer/login.php/">
+                                <span class="icon-home-button"></span>Login
+                                    </a>
+                            <a class="style2" href="https://southseademo.southseaprivate.online/openaccount.html">
+                                <span class="icon-payment"></span>Open an Account
+                                    </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Start Main Header Style1 Bottom-->
+    <div class="main-header-style1-bottom">
+        <div class="auto-container">
+            <div class="outer-box">
+                <div class="update-box">
+                    <div class="inner-title">
+                        <span class="icon-megaphone"></span>
+                        <h4>Updates:</h4>
+                    </div>
+                    <div class="text">
+                        <p>Get upto 4%* on our Savings Account Balances with {{meta.title}}.</p>
+                        <a href="index.html#">
+                            <span class="icon-chevron"></span>More Details</a>
+                    </div>
+                </div>
+                <div class="slogan-box">
+                    <p>Dear Customer, We have launched Video KYC facility for New customer to open savings ac
+                            </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Main Header Style1 Bottom-->
+
+</header>

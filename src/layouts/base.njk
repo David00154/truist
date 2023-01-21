@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{meta.lang}}" class="theme-light">
+    {#  #}
+    {% include "../includes/head.njk" %}
+    {#  #}
+    <body>
+        <div id="google_translate_element"></div>
+        <div class="page-wrapper">
+            {% include "../includes/navbar.njk" %}
+            <div class="stricky-header stricked-menu main-menu">
+                <div class="sticky-header__content"></div>
+                <!-- /.sticky-header__content -->
+            </div>
+            <!-- /.stricky-header -->
+            {{ content | safe}}
+        </div>
+
+        {% include "../includes/mobile_nav.njk" %}
+
+        <div class="search-popup">
+            <div class="search-popup__overlay search-toggler"></div>
+            <div class="search-popup__content">
+                <form action="index.html#">
+                    <label for="search" class="sr-only">search here</label>
+                    <input type="text" id="search" placeholder="Search Here..."/>
+                    <button type="submit" aria-label="search submit" class="thm-btn">
+                        <i class="icon-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <a href="index.html#" data-target="html" class="scroll-to-target scroll-to-top">
+            <i class="icon-chevron"></i>
+        </a>
+        {# Script #}
+        <script src="{{ '/assets/vendors/jquery/jquery-3.6.0.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/bootstrap/js/bootstrap.bundle.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/bxslider/jquery.bxslider.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/circleType/jquery.circleType.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/circleType/jquery.lettering.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/isotope/isotope.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-appear/jquery.appear.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-migrate/jquery-migrate.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-ui/jquery-ui.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/jquery-validate/jquery.validate.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/nice-select/jquery.nice-select.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/odometer/odometer.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/owl-carousel/owl.carousel.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/swiper/swiper.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/vegas/vegas.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/wnumb/wNumb.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/wow/wow.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/extra-scripts/jquery.paroller.min.js' | url }}"></script>
+        <script src="{{ '/assets/vendors/language-switcher/jquery.polyglot.language.switcher.js' | url }}"></script>
+
+        <!-- Template js -->
+        <script src="{{ '/assets/js/custom.js' | url }}"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google
+                    .translate
+                    .TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+
+</html>
