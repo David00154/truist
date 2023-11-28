@@ -1,6 +1,6 @@
 {
 	"email": "info@info.com",
-	"admin": "https://truist-dashboard.vercel.app/",
+	"admin": "https://truist-admin.onrender.com/personal-banking/",
 	"phone": "(844-487-8478)",
 	"header_menu": ["Business banking", "Commercial Banking", "Agriculture Banking", "Small Business", "Corporate & Investment Banking"],
 	"menu": [
